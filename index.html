@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rkive</title>
+    <!--Mi estilo CSS-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--JavaScript-->
+    <script src="javascript.js"></script>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Bootstrap Javascript-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Biblioteca jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--Icon-->
+    <link href="images/rkive-ico.ico" rel="shortcut icon">
+    <!--Íconos-->
+	<script src="https://kit.fontawesome.com/9e75887585.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Inicio: Navbar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#" id="name-tittle">
+                <img src="images/rkive-img.png" class="img-fluid" alt="Logo" width="70" height="70"/>
+                RKIVE
+            </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">CD'S</a></li>
+                  <li><a class="dropdown-item" href="#">Vinilos</a></li>
+                  <li><a class="dropdown-item" href="#">BLU-RAY</a></li>
+                  <li><a class="dropdown-item" href="#">Artistas</a></li>
+                  <li><a class="dropdown-item" href="#">Pre-Ventas</a></li>
+                  <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Protección</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cotizaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tendencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar aquí..." aria-label="Search">
+                <button class="btn" type="submit">Buscar</button>
+            </form>
+
+            <div class="icons" id="icons">
+                <a class="fa-solid fa-user" id="login-btn" href="user.html"></a>
+                <a class="fa-solid fa-cart-shopping" id="cart-btn"></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Fin: Navbar -->
+
+    <!-- Inicio: Carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/midnight-taylor.jpg" class="d-block w-100" alt="">
+            <div class="centrado">Ordena Hoy</div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/faith in the future-louis.jpg" class="d-block w-100" alt="">
+            <div class="centrado-second">Comprar Aquí</div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/proof-bts.jpg" class="d-block w-100" alt="">
+            <div class="centrado-third">Más información</div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/harry's house-harry.jpg" class="d-block w-100" alt="">
+            <div class="centrado-fourth">Comprar Aquí</div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- Fin: Carousel -->
+
+    <!-- Inicio: Secciones -->
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item-two">
+      <a class="nav-link" id="botones"> <i class="fa-solid fa-piggy-bank"></i> Ofertas</a>
+    </li>
+    <li class="nav-item-two">
+      <a class="nav-link" id="botones"> <i class="fa-solid fa-truck-fast"></i> Envíos</a>
+    </li>
+    <li class="nav-item-two">
+      <a class="nav-link" id="botones"> <i class="fa-solid fa-hand-holding-hand"></i> Devoluciones</a>
+    </li>
+  </ul>
+
+  <!-- Fin: Secciones -->
+
+  <!-- Inicio: Hashtag -->
+
+  <div class="name">
+    <h1>#LAMÚSICAESVIDA</h1>
+  </div>
+
+    <!-- Fin: Hashtag -->
+
+    <!-- Inicio: Ofertas -->
+
+<div id="contenedor-one">
+    <div  class="offers-name">
+        <h1> <i class="fa-solid fa-tags"> </i>OFERTAS: SOLO POR HOY </h1>
+    </div>
+    <hr>
+        <div class="row mb-4 mb-lg-0">
+          <div class="col">
+            <div class="card">
+              <img src="images/taylor-swift.jpg" class="card-img-top" alt="">
+              <div class="card-body" id="see-product">
+                <h6 class="card-title" id="contenido"><center>TAYLOR SWIFT - Midnights "Blue Moon"</center></h6>
+                <p class="card-text"><center>(Vinilo, 1 de 4 portadas, Fotos exclusivas despegables)</center></p>
+                <p class="card-text"><center><b>Antes:</b> <del>S/. 225<br></del><b>Ahora:</b> S/. 200</center></p>
+                <a href="#" class="btn" id="see-button">Ver producto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/harry-styles.jpg" class="card-img-top" alt="">
+              <div class="card-body" id="see-product">
+                <h6 class="card-title" id="contenido"><center>HARRY STYLES - Harry's House</center></h6>
+                <p class="card-text"><center>(CaseBook Exclusive, Zine, Vinilo, CD)</center></p>
+                <p class="card-text"><center><b>Antes:</b> <del>S/. 268.90<br></del><b>Ahora:</b> S/. 245.90</center></p>
+                <a href="#" class="btn" id="see-button">Ver producto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/bad-bunny.jpg" class="card-img-top" alt="">
+              <div class="card-body" id="see-product">
+                <h6 class="card-title" id="contenido"><center>BAD BUNNY - Un Verano Sin Ti</center></h6>
+                <p class="card-text"><center>(Versión 2CD's, Versión Standard)</center></p>
+                <p class="card-text"><center><b>Antes:</b> <del>S/. 80.90<br></del><b>Ahora:</b> S/. 73.00</center></p>
+                <a href="#" class="btn" id="see-button">Ver producto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/olivia-rodrigo.jpg" class="card-img-top" alt="">
+              <div class="card-body" id="see-product">
+                <h6 class="card-title" id="contenido"><center>OLIVIA RODRIGO - Sour CD Deluxe</center></h6>
+                <p class="card-text"><center>(CD Versión Deluxe, Target Exclusive, PhotoBook)</center></p>
+                <p class="card-text"><center><b>Antes:</b> <del>S/. 85.00<br></del><b>Ahora:</b> S/. 79.00</center></p>
+                <a href="#" class="btn" id="see-button">Ver producto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+<!-- Inicio: Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+</nav>
+<!-- Fin: Pagination -->
+<!-- Fin: Ofertas -->
+
+<!-- Inicio: Categorías-->
+<div id="box-one">
+<div id="contenedor-two">
+    <div  class="offers-name-two">
+        <h1> <i class="fa-solid fa-music"></i> CATEGORÍAS </h1>
+        <p>Encuentra tu propio estilo, nosotros nos encargaremos de brindarte las mejores recomendaciones.</p>
+    </div>
+      
+      <div class="contenedor-three">
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/pop-rock-internacional.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Pop/Rock Internacional</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/pop-rock-nacional.jpeg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Pop/Rock Nacional</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/blue-jazz.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Blue y Jazz</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/rock-metal.jpg" class="img-thumbnail" alt="...">
+          <a class="menuButton" href=""><div class="texto-encima">Rock y Metal</div></a>
+        </div>
+      </div>
+      
+      <div class="contenedor-three">
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/kpop.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">K-Pop</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/rap.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Rap</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/flamenco.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Flamenco</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/reggae.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Reggae</div></a>
+        </div>
+      </div>
+      
+      <div class="contenedorfourth">
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/electronic.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Electrónica y Dance</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/hip-hop.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Hip Hop</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/clásica.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Clásica</div></a>
+        </div>
+        <div class="contenedor">
+          <a class="menuButton" href=""><img src="images/country.jpg" class="img-thumbnail" alt="..."></a>
+          <a class="menuButton" href=""><div class="texto-encima">Country</div></a>
+        </div>
+      </div>
+ </div>
+</div>
+
+<!-- Fin: Categorías-->
+
+<!-- Productos -->
+
+<div id="box-two">
+  <section id="stock">
+    <h1> <i class="fa-solid fa-store"></i> NUESTROS PRODUCTOS</h1>
+  </section>
+  <hr>
+  <div id="in-stock">
+    <div class="" id="stock-products">
+      <a class="stockButton" href=""><img src="images/discos.jpg" class="img-thumbnail" alt="..."></a>
+      <a class="nav-link" id="btn-two">CD'S<i class="fa-solid fa-angles-right"></i></a>
+    </div>
+    <div id="stock-products">
+      <a class="stockButton" href=""><img src="images/vinilos.jpg" class="img-thumbnail" alt="..."></a>
+      <a class="nav-link" id="btn-two">Vinilos<i class="fa-solid fa-angles-right"></i></a>
+    </div>
+    <div id="stock-products">
+      <a class="stockButton" href=""><img src="images/protección.jpg" class="img-thumbnail" alt="..."></a>
+      <a class="nav-link" id="btn-two">Protección<i class="fa-solid fa-angles-right"></i></a>
+    </div>
+  </div>
+  <!--FIN: STOCK DISPONIBLE-->
+</div>
+
+<!-- Fin: Productos -->
+
+<!-- Inicio: Stock -->
+<div class="box-three">
+  <div  class="disco-name">
+    <h1> <i class="fa-solid fa-compact-disc"></i> EN STOCK</h1>
+  </div>
+  <hr>
+
+  <div id="contenedor-five">
+    <div class="row me-auto mb-4 mb-lg-0">
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/proof-standard.jpg" class="card-img-top" alt="">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>BTS - Proof Edición Standard</center></h6>
+            <p class="card-text" id="precio">Precio: S/.350</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/proof-edición-compacta.jpg" class="card-img-top" alt="">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>BTS - Proof Edición Compact</center></h6>
+            <p class="card-text" id="precio">AGOTADO</p>
+            <button type="submit" id="boton-ver-product-two" disabled-"true"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/harry-styles-vinilo.png" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>HARRY STYLES - Harry Styles</center></h6>
+            <p class="card-text" id="precio">Precio: S/.75</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/folklore.png" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>TAYLOR SWIFT - Folklore Deluxe</center></h6>
+            <p class="card-text" id="precio">Precio: S/.125</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+  
+  <div id="contenedor-five">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/balas-perdidas.jpg" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>MORAT <br> Balas Perdidas</center></h6>
+            <p class="card-text" id="precio">Precio: S/.85</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/familia.jpg" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>CAMILA CABELLO <br> Familia</center></h6>
+            <p class="card-text" id="precio">Precio: S/.165</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/music-of-the-spheres.jpg" class="card-img-top" alt="">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>COLDPLAY - Music Of The Spheres</center></h6>
+            <p class="card-text" id="precio">AGOTADO</p>
+            <button type="submit" id="boton-ver-product-two" disabled-"true"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/adele.jpg" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>ADELE<br> 30 CD</center></h6>
+            <p class="card-text" id="precio">Precio: S/.79</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+  
+  <div id="contenedor-five">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/left-and-right.jpg" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>CHARLIE PUTH - Left & Right (feat. Jung Kook)</center></h6>
+            <p class="card-text" id="precio">Precio: S/.45</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/changes.jpg" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>JUSTIN BIEBER <br> Changes</center></h6>
+            <p class="card-text" id="precio">Precio: S/.72</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/the-astronaut.jpg" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>JIN - The Astronaut (2 Versions)</center></h6>
+            <p class="card-text" id="precio">Precio: S/.320</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="card" id="card-products">
+          <img src="images/el-mal-querer.jpg" class="card-img-top" alt="...">
+          <div class="card-body-one">
+            <h6 class="card-title" id="productos-precios"><center>LA ROSALÍA - El Mal Querer</center></h6>
+            <p class="card-text" id="precio">Precio: S/.62</p>
+            <a href="#" class="btn" id="boton-ver-product"><i class="fa-solid fa-cart-shopping"></i>Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+
+</div>
+<!-- Fin: Stock -->
+
+<!-- Inicio: Navegación -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item-two"><a class="page-link" href="#">1</a></li>
+    <li class="page-item-two"><a class="page-link" href="#">2</a></li>
+    <li class="page-item-two"><a class="page-link" href="#">3</a></li>
+    <li class="page-item-two"><a class="page-link" href="#">4</a></li>
+    <li class="page-item-two"><a class="page-link" href="#">5</a></li>
+    <li class="page-item-two">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+<hr>
+<!-- Fin: Navegación -->
+<!-- Inicio: Imagen -->
+<div class="image">
+  <img src="images/bring-cds.jpg" class="d-block w-100" alt="...">
+  <p>VINILOS Y CD'S</p>
+  <h5>Encuentra los CD'S y Vinilos de tus artistas favoritos y a los mejores precios aquí, en <b>RKIVE</b>.</h5>
+</div>
+<hr>
+<!---Fin: Imagen-->
+<!-- Inicio: Formulario-->
+<div class="box-four">
+  <div class="contenedor-four">
+    <section id="help">
+      <h1> <i class="fa-solid fa-circle-question"></i> ¿Necesitas Ayuda?</h1>
+      <p>¿Necesitas algún producto en particular y no lo encuentras? 
+      <br>Sugiere tu producto en el formulario que se muestra acontinuación y nosotros nos encargaremos de traértelo.</p>
+    </section>
+              <!-- Empieza el Formulario -->
+              <form id = "contacto">
+
+                  <!-- Nombres -->
+                  <div class="mb-3" id="form-help">
+                    <label for="nombre" class="form-label"><i class="fa-solid fa-user"></i>Nombres y Apellidos:</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Escribe aquí tus nombres y apellidos">
+                  </div>
+
+                  <!-- E-mail -->
+                  <div class="mb-3" id="form-help">
+                    <label for="email" class="form-label"><i class="fa-regular fa-envelope"></i>Correo Electrónico:</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Ejemplo: maría@gmail.com">
+                  </div>
+
+                  <!-- Escribir mensaje -->
+                  <div class="mb-3" id="form-help">
+                    <label for="mensaje" class="p-1 form-label"><i class="fa-solid fa-message"></i>Mensaje:</label>
+                    <textarea rows="3" name="mensaje" id="mensaje" class="form-control" placeholder="Escribe tu mensaje aquí..."></textarea>
+                  </div>
+
+                  <!-- Botón -->
+                  <div class="btn-form">
+                      <button type="submit" class="btn btn-primary btn-lg" onclick="validar(), enviar()">Enviar</button>
+                  </div>     
+              </form>
+    </section>
+  </div>
+</div>
+<!-- Fin: Forulario-->
+
+<!-- Inicio: Seccción Soporte y Ayuda -->
+<div class="box-five">
+  <div class="contenedor-five">
+    <div class="cabecera">
+      <a class="navbar-brand-two" href="#" id="name-tittle">
+        <img src="images/rkive-img.png" class="img-fluid" alt="Logo" width="70" height="70"/>
+        RKIVE
+      </a>
+      <a class="icons-redes" href=""> 
+        <i class="fa-brands fa-facebook"></i> 
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      <hr>
+    </div>
+    <div class="about">
+      <div class="blog">
+        <h2>BLOG</h2>
+          <a href="#">¿Quiénes somos?</a><br>
+          <a href="#">Aviso Legal</a><br>
+          <a href="#">Política de Privacidad</a><br>
+          <a href="#">Política de Cookies</a>
+      </div>
+      <div class="contact">
+        <h2>CONTÁCTATE CON NOSOTROS</h2>
+          <a><b>Horario Atención Telefónica</b></a><br>
+          <a href="#"> <i class="fa-solid fa-phone"></i> 902 092 633</a><br>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i> 601 406 803</a><br>
+          <a><b>De Lunes a Viernes (8:30 - 18:30)</b></a><br>
+          <a>Fuera de este horario te intentaremos responder lo antes posible.</a><br><br>
+          <a href="#"><i class="fa-solid fa-envelope"></i>rkive@gmail.com</a><br><br>
+          <a>Dirección:</a><br>
+          <a>Av. Jirón, 9 - 1º Of. 25</a>
+      </div>
+      <div class="soport">
+         <h2>SOPORTE</h2>
+          <a href="#">Necesito Ayuda</a><br>
+          <a href="#">Envíos y Pagos</a><br>
+          <a href="#">Cambios y Devoluciones</a><br>
+          <a href="#">Condiciones Generales</a>
+      </div>
+      <div class="pay">
+        <h2>MEDIOS DE PAGO:</h2>
+        <button type="button"><img src="images/visa.jpg" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/mastercard.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/efectivo.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/american.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/falabella.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/paypal.png" alt="" height="30" width="50px"></button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Fin: Seccción Soporte y Ayuda-->
+
+<!-- Inicio: Footer -->
+<footer class="derechos">
+  2022 RKIVE &copy; Todos los Derechos Reservados.
+</footer>
+<!-- Fin: Footer -->
+</body>
+</html>
