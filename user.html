@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rkive</title>
+    <!--Mi estilo CSS-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-user.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Bootstrap Javascript-->
+    <script src="js/bootstrap.bundle.min.js"></script>   
+    <!--Icon-->
+    <link href="images/rkive-ico.ico" rel="shortcut icon">
+    <!--Íconos-->
+	<script src="https://kit.fontawesome.com/9e75887585.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Inicio: Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#" id="name-tittle">
+                <img src="images/rkive-img.png" class="img-fluid" alt="Logo" width="70" height="70"/>
+                RKIVE
+            </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">CD'S</a></li>
+                  <li><a class="dropdown-item" href="#">Vinilos</a></li>
+                  <li><a class="dropdown-item" href="#">BLU-RAY</a></li>
+                  <li><a class="dropdown-item" href="#">Artistas</a></li>
+                  <li><a class="dropdown-item" href="#">Pre-Ventas</a></li>
+                  <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Protección</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cotizaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tendencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar aquí..." aria-label="Search">
+                <button class="btn" type="submit">Buscar</button>
+            </form>
+
+            <div class="icons" id="icons">
+                <div class="fa-solid fa-user" id="login-btn"></div>
+                <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Fin: Navbar -->
+
+<!-- Crear Cuenta -->
+<div id="box-six">
+<div id="contenedor-six">
+  <div  class="account">
+    <h1> <i class="fa-solid fa-house"></i> CREAR CUENTA </h1>
+    <p>Crea tu cuenta en RKIVE y adquiere nuestros productos.</p>
+  </div>
+
+  <div class="container">
+    <div class="col-md-4 border shadow-sm" id="form">
+
+        <div class="form-group">
+          <label> <i class="fa-solid fa-user"></i>Usuario:</label>
+          <input type="text" class="form-control" id="user" placeholder="Usuario" autocomplete="off" name="">
+          <span id="userMsg"></span>
+        </div>
+        <br>
+        <div class="form-group">
+          <label> <i class="fa-solid fa-at"></i> Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" placeholder="E-mail" autocomplete="off" name="">
+          <span id="emailMsg"></span>
+        </div>
+        <br>
+        <div class="form-group">
+          <label> <i class="fa-solid fa-lock"></i>Contraseña:</label>
+          <input type="password" class="form-control" id="pass" placeholder="Contraseña" autocomplete="off" name="">
+          <span id="passMsg"></span>
+        </div>
+        <br>
+        <div class="form-group">
+          <label> <i class="fa-solid fa-lock-open"></i> Vuelva a ingresar contraseña:</label>
+          <input type="password" class="form-control" id="pass2" placeholder="Confirmación contraseña" autocomplete="off" name="">
+          <span id="passMsg2"></span>
+        </div>
+        <br>
+        <div class="form-group">
+          <button class="btn btn-block" id="btn" onclick="crear()">Crear cuenta</button>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<!-- Fin: Crear cuenta --->
+
+
+
+<!-- Inicio: Seccción Soporte y Ayuda -->
+<div class="box-five">
+  <div class="contenedor-five">
+    <div class="cabecera">
+      <a class="navbar-brand-two" href="#" id="name-tittle">
+        <img src="images/rkive-img.png" class="img-fluid" alt="Logo" width="70" height="70"/>
+        RKIVE
+      </a>
+      <a class="icons-redes" href=""> 
+        <i class="fa-brands fa-facebook"></i> 
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      <hr>
+    </div>
+    <div class="about">
+      <div class="blog">
+        <h2>BLOG</h2>
+          <a href="#">¿Quiénes somos?</a><br>
+          <a href="#">Aviso Legal</a><br>
+          <a href="#">Política de Privacidad</a><br>
+          <a href="#">Política de Cookies</a>
+      </div>
+      <div class="contact">
+        <h2>CONTÁCTATE CON NOSOTROS</h2>
+          <a><b>Horario Atención Telefónica</b></a><br>
+          <a href="#"> <i class="fa-solid fa-phone"></i> 902 092 633</a><br>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i> 601 406 803</a><br>
+          <a><b>De Lunes a Viernes (8:30 - 18:30)</b></a><br>
+          <a>Fuera de este horario te intentaremos responder lo antes posible.</a><br><br>
+          <a href="#"><i class="fa-solid fa-envelope"></i>rkive@gmail.com</a><br><br>
+          <a>Dirección:</a><br>
+          <a>Av. Jirón, 9 - 1º Of. 25</a>
+      </div>
+      <div class="soport">
+         <h2>SOPORTE</h2>
+          <a href="#">Necesito Ayuda</a><br>
+          <a href="#">Envíos y Pagos</a><br>
+          <a href="#">Cambios y Devoluciones</a><br>
+          <a href="#">Condiciones Generales</a>
+      </div>
+      <div class="pay">
+        <h2>MEDIOS DE PAGO:</h2>
+        <button type="button"><img src="images/visa.jpg" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/mastercard.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/efectivo.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/american.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/falabella.png" alt="" height="30" width="50px"></button>
+				<button type="button"><img src="images/paypal.png" alt="" height="30" width="50px"></button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Fin: Seccción Soporte y Ayuda-->
+
+<!-- Inicio: Footer -->
+<footer class="derechos">
+  2022 RKIVE &copy; Todos los Derechos Reservados.
+</footer>
+<!-- Fin: Footer -->
+
+<!--Biblioteca jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="acceder.js"></script>
+</body>
+</html>
